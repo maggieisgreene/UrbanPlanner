@@ -29,6 +29,17 @@ namespace UrbanPlanner
       _owner = owner;
     }
 
+    public void Print()
+    {
+      Console.WriteLine(_address);
+      Console.WriteLine("-----------------");
+      Console.WriteLine($"Designed by {_designer}");
+      Console.WriteLine($"Constucted on {_dateConstructed}");
+      Console.WriteLine($"Owned by {_owner}");
+      Console.WriteLine($"{Volume} cubic meters of space!");
+      Console.WriteLine("-----------------");
+    }
+
     public Building(string address)
     {
       _address = address;
